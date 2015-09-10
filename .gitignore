@@ -1,0 +1,3 @@
+lib/vendor/assets
+.env
+.env.*

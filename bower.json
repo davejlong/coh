@@ -1,0 +1,6 @@
+{
+  "name": "communities-of-hope",
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}

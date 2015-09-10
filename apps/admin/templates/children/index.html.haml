@@ -1,0 +1,6 @@
+- if children.any?
+  - children.each do |child|
+    .child
+      %h3= child.name
+- else
+  %div.alert-box.warning.radius(data-alert) There are no children available.
