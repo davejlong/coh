@@ -1,6 +1,10 @@
+- if has_error?
+  %div.alert-box.warning.radius(data-alert)= error_message
+
 - if children.any?
   - children.each do |child|
     .child
-      %h3= child.name
+      %a(href="#{routes.child_path(id: child.id)}")
+        %h3= child.name
 - else
   %div.alert-box.warning.radius(data-alert) There are no children available.

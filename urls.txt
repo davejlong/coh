@@ -1,0 +1,4 @@
+http://localhost:2300/admin/children
+http://localhost:2300/admin/children/1
+http://localhost:2300/admin/children/2
+

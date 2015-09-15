@@ -20,7 +20,7 @@ describe Admin::Controllers::Children::Show do
     it "redirects back to list" do
       page = action.call params
       expect(page[0]).to eql 302
-      expect(page[1]["Location"]).to match(/children$/)
+      expect(page[1]["Location"]).to match(/children\?/)
     end
   end
 end

@@ -6,4 +6,5 @@ collection :children do
   attribute :name, String
   attribute :birthdate, Date
   attribute :age, Integer
+  attribute :grade, String
 end

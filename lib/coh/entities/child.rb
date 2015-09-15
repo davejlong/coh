@@ -1,7 +1,7 @@
 class Child
   include Lotus::Entity
 
-  attributes :name, :birthdate, :age
+  attributes :name, :birthdate, :age, :grade
 
   def birthdate=(birthdate)
     return if birthdate.nil?

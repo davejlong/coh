@@ -5,6 +5,7 @@ Lotus::Model.migration do
       column :name, String, null: false
       column :birthdate, Date
       column :age, Integer
+      column :grade, String
     end
   end
 end

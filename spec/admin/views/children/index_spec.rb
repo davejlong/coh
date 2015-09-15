@@ -32,4 +32,12 @@ describe Admin::Views::Children::Index do
       expect(rendered).not_to include "There are no children available."
     end
   end
+
+  context "when view receives an error" do
+    let(:exposures) { Hash[children: [], error: "404"] }
+
+    it "shows an error" do
+      expect(rendered).to include "Child could not be found."
+    end
+  end
 end

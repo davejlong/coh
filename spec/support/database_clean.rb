@@ -1,5 +1,8 @@
 RSpec.configure do |config|
-  config.before(:context) do
+  # config.before(:context) do
+  #   ChildRepository.clear
+  # end
+  config.after(:example) do
     ChildRepository.clear
   end
   config.after(:suite) do
